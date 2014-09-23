@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>ValaProject</ItemType>
+    <ProjectGuid>{928481A8-14F5-4273-AC15-758ACD5E6E1C}</ProjectGuid>
+    <compiler>
+      <compiler />
+    </compiler>
+    <Packages>
+      <Packages>
+        <ProjectPackage file="glib-2.0.pc" name="glib-2.0" IsProject="False" />
+        <ProjectPackage file="gobject-2.0.pc" name="gobject-2.0" IsProject="False" />
+        <ProjectPackage file="..\afrodite\afrodite.mdproj" name="afrodite" IsProject="True" />
+        <ProjectPackage file="libvala-0.26.pc" name="libvala-0.26" IsProject="False" />
+        <ProjectPackage file="gio-2.0.pc" name="gio-2.0" IsProject="False" />
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <CodeGeneration>
+      <CodeGeneration WarningLevel="Normal" WarningsAsErrors="False" OptimizationLevel="0" ExtraCompilerArguments="" DefineSymbols="DEBUG" EnableMultithreading="False" ctype="ValaCompilationParameters" />
+    </CodeGeneration>
+    <SourceDirectory>.</SourceDirectory>
+    <Output>
+      <Output output="afroditetest" />
+    </Output>
+    <Build>
+      <Build target="Bin" />
+    </Build>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <CodeGeneration>
+      <CodeGeneration WarningLevel="Normal" WarningsAsErrors="False" OptimizationLevel="3" ExtraCompilerArguments="" DefineSymbols="" EnableMultithreading="False" ctype="ValaCompilationParameters" />
+    </CodeGeneration>
+    <SourceDirectory>.</SourceDirectory>
+    <Output>
+      <Output output="afroditetest" />
+    </Output>
+    <Build>
+      <Build target="Bin" />
+    </Build>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="afroditetest.vala" />
+  </ItemGroup>
+</Project>

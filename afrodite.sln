@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "afrodite", "afrodite\afrodite.mdproj", "{2139F6E9-36CF-4805-8A41-D8A54093B372}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "afroditetest", "afroditetest\afroditetest.mdproj", "{928481A8-14F5-4273-AC15-758ACD5E6E1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2139F6E9-36CF-4805-8A41-D8A54093B372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2139F6E9-36CF-4805-8A41-D8A54093B372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2139F6E9-36CF-4805-8A41-D8A54093B372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2139F6E9-36CF-4805-8A41-D8A54093B372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928481A8-14F5-4273-AC15-758ACD5E6E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928481A8-14F5-4273-AC15-758ACD5E6E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928481A8-14F5-4273-AC15-758ACD5E6E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928481A8-14F5-4273-AC15-758ACD5E6E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = afroditetest\afroditetest.mdproj
+	EndGlobalSection
+EndGlobal
